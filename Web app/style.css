@@ -1,0 +1,139 @@
+
+
+body{
+    margin:0px;
+    padding:0px;
+    
+}
+
+.container{
+    width:1360px;
+    height:700px;
+    float: left;
+}
+
+.header{
+    width:1360px;
+    height: 100px;
+    background-color: black;
+    float: left;
+}
+
+#logo{
+    width:266;
+    height: 150;
+    background-color: hotpink;
+    float: left;
+
+}
+.menu{
+    width:1000;
+    height: 100px;
+    background-color: rgb(90, 66, 226);
+    float: left;
+}
+
+.menu ul{
+    list-style-type: none; 
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    float: left;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 41px 20px;
+}
+.menu ul li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+.menu ul li a:hover{
+    background-color: blue;
+    transition: ;
+}
+
+
+.leftside{
+    width:200px;
+    height: 450px;
+    background-color: orange;
+    float: left;
+}
+.main{
+    width:1360px;
+    height: 450px;
+    background-color: white;
+    float: left;
+}
+
+
+
+
+.div1{
+    height: 200px;
+    width: 400px;
+    background: blueviolet;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+}
+.div2{
+    height: 200px;
+    width: 400px;
+    background: blueviolet;
+    color: white;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+}
+.div3{
+    height: 200px;
+    width: 400px;
+    
+    background-color: aquamarine;
+    
+    color: white;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+}
+.div3:hover{
+    background-color: hotpink;
+    transition: 2s;
+    color: black;
+}
+.div4{
+    height: 200px;
+    width: 400px;
+  
+    
+    color: white;
+    background-color: aqua;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+}
+.div4:hover{
+    background-color: hotpink;
+    transition: 2s;
+    color: black;
+}
+.rightside{
+    width:200px;
+    height: 450px;
+    background-color: red;
+    float: right;
+}
+
+.footer{
+    width:1360px;
+    height: 100px;
+    background-color: black;
+    float: left;
+}
+
+
