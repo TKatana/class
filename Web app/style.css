@@ -1,75 +1,226 @@
-body{
-    margin: 0px;
-    padding: 0px;
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container{
-    width: 1366px;
-    height: 650px;
+
+body {
+  
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
 }
-.header{
-    width: 1366px;
-    height: 100px;
+
+/* Navigation */
+header {
+    background: transparent;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
-#logo{
-    width: 200px;
-    height: 100px;
-    background-color: hotpink;
-    float: left;
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
-.menu{
-    width: 1166px;
-    height: 100px;
-    background-color: black;
-    float: left;
+
+nav ul li {
+    margin: 0 15px;
 }
-.menu ul{
-    list-style-type: none;
-    float: right;
-    margin: 0px;
-    padding: 0px;
-}
-.menu ul li{
-    float: left;
-}
-.menu ul li a{
-    display: block;
-    color: white;
+
+nav ul li a {
+    font-weight: bold;
+    font-size: larger;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
     text-decoration: none;
-    padding: 41px 20px;
+    font-size: 18px;
+    padding: 8px 15px;
 }
-.menu ul li a:hover{
-    background-color: blue;
-    transition: 1s;
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
 }
-.main{
-    width: 1366px;
-    height: 450px;
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('pexels-cup-of-couple-7302525.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero-section .button {
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-section .button:hover {
+    background: #c0392b;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service-cards, .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.member{
+    padding: 20px;
+    margin: 10px;
 
 }
-.leftside{
-    width: 200px;
+.member img{
+    display: flex;
+    justify-content: space-evenly;
     height: 450px;
-    background-color: gray;
+    width: fit-content;
+    border-radius: 5px;
+}
+.team-members{
+    display: flex;
+    background-color: rgb(229, 233, 234);
+    width: 100%;
+    border-radius: 10px;
+}
+.team-members img{
+
+    display: flex;
+    height: 450px;
+    width: fit-content;
+    border-radius: 5px;
+    
+    
+}
+
+.service-icon{
+    background: url(Mobile\ Setting.png);
     float: left;
 }
-.mainbody{
-    width: 966px;
-    height: 450px;
-    background-color: white;
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+   
+    justify-content: space-evenly;
+}
+.card img{
+    margin: 25px;
+    height: 40px;
+    width: 40px;
     float: left;
 }
-.rightside{
-    width: 200px;
-    height: 450px;
-    background-color: gray;
+.portfolio-gallery{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.portfolio-gallery img {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+    height: 350px;
+    margin: 0px;
+    border-radius: 0px;
     float: left;
+    
+    
 }
-.footer{
-    width: 1366px;
-    height: 100px;
-    background-color: black;
+
+.box1 tr td{
+    
+   margin: 5px;
+   padding: 12px 5px;
+   float:left;
+   align-content: center;
+   
+   background: #fffafa;
+   
+
 }
-.footer_con{
-    color: white;
+.box1 :hover{
+    
+    background-color: hotpink;
+    transition: 2s;
+    color: black;
+    
+}
+.portfolio11{
+    display: flex;
+    background:#ddd;
+    height: 1000px;
+    align-items: center;
+}
+.contact-info {
+    margin-top: 20px;
+}
+
+/* Contact Form */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
     text-align: center;
+    padding: 20px;
 }

@@ -1,34 +1,152 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>HTML Basic Layout</title>
-        <link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-        <div class="container">
-            <div class="header">
-				<div id="logo">Logo Here</div>
-				<div class="menu">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Works</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-            <div class="main">
-				<div class="leftside">Left side</div>
-				<div class="mainbody">Main Body</div>
-				<div class="rightside"> Right Side</div>
-			</div>
-            <div class="footer">
-				<div class="footer_con">Copyright &copy; Web-309</div>
-			</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Page Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-	</body>
-	<footer>
+    </header>
 
-	</footer>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <h1>Welcome to Our Website</h1>
+        <p>Your tagline or welcome message here.</p>
+        <a href="#contact" class="button">Get Started</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="Mobile Setting.png" alt="">
+                    
+                
+                <h3>Easy to Customize</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card">
+                <img src="Plastic Resin Blue Modular Block.png" alt="">
+                <h3>100+ Components</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card">
+                <img src="dashboard.svg" alt="">
+                <h3>Super Fast</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card">
+                <img src="unread.png" alt="">
+                <h3>Clean Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card">
+                <img src="solid.png" alt="">
+                <h3>Bootstrap 4 UI Kit</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card">
+                <img src="touch.svg" alt="">
+                <h3>Advanced Features</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <div class="portfolio11">
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <table>
+            <div class="box1">
+                <tr>
+                    <td>All</td>
+                    <td>Branding</td>
+                    <td>Marketing</td>
+                    <td>Planning</td>
+                    <td>Research</td>
+                </tr>
+            </div>
+        </table>
+        <br>
+        <div class="portfolio-gallery">
+            <img src="DSC03450-820x500.jpg" alt="Project 1">
+            <img src="sportive-woman-flying-jump.jpg" alt="Project 2">
+            <img src="hamburger-platter-meat-beef-8e49fde8fef6543560b6dc3004b2034f.jpg" alt="Project 3">
+            <img src="abstract-night-traffic-blur-background-with-bokeh-light_293060-4098.jpg" alt="Project 1">
+            <img src="designer-done-employees-employer-thumbnail.jpg" alt="Project 2">
+            <img src="droplets-on-grass-after-raining-t1jsbbw5gryjiwqb.jpg" alt="Project 3">
+        </div>
+    </section>
+</div>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div>
+            <h2>Features</h2>
+            <p>Highlight the features of your services or products here.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="pexels-joelson-melo-9135-50855.jpg" alt="Member 1">
+                <h3>Member 1</h3>
+                <p>Position</p>
+            </div>
+            <div class="member">
+                <img src="pexels-linkedin-2182970.jpg" alt="Member 2">
+                <h3>Member 2</h3>
+                <p>Position</p>
+            </div>
+            <div class="member">
+                <img src="pexels-thisisengineering-3861954.jpg" alt="Member 3">
+                <h3>Member 3</h3>
+                <p>Position</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Address: 123 Street, City, Country</p>
+            <p>Email: example@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
+</body>
 </html>
