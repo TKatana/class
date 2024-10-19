@@ -10,9 +10,13 @@
 <body>
     <!-- Header and Navigation -->
     <header>
+        
         <div class="nav">
+            
             <nav>
+                
                 <ul>
+                    <a href="index.html" class="navbar-brand"><img src="img/testimoni/logo.png" alt></a>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
@@ -27,24 +31,63 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <h1>Welcome to Our Website</h1>
-        <p>Your tagline or welcome message here.</p>
-        <a href="#contact" class="button">Get Started</a>
+        <h1>Helium - Bootstrap 4 UI Kit</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Id ipsa, non ut molestiae rerum praesentium.</p>
+        <table>
+            <tr>
+                <td>
+                    <a href="#contact" class="button">Get Started</a>
+            
+                </td>
+                <td><a href="#contact" class="button">Learn More</a></td>
+            </tr>
+        </table>
     </section>
-
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-card">
+                    <img src="img/about/img1.png" alt="About Icon 1">
+                    <h3>About Title</h3>
+                    <p>Quisque sit amet libero purus. Nulla a dignissim quam. In hac habitasse platea dictumst.</p>
+                </div>
+                <div class="about-card">
+                    <img src="img/about/img2.png" alt="About Icon 2">
+                    <h3>About Title</h3>
+                    <p>Quisque sit amet libero purus. Nulla a dignissim quam. In hac habitasse platea dictumst.</p>
+                </div>
+                <div class="about-card">
+                    <img src="img/about/img3.png" alt="About Icon 3">
+                    <h3>About Title</h3>
+                    <p>Quisque sit amet libero purus. Nulla a dignissim quam. In hac habitasse platea dictumst.</p>
+                </div>
+                <div class="about-card">
+                    <img src="img/about/img4.png" alt="About Icon 4">
+                    <h3>About Title</h3>
+                    <p>Quisque sit amet libero purus. Nulla a dignissim quam. In hac habitasse platea dictumst.</p>
+                </div>
+            </div>
+        </section>
     <!-- Services Section -->
     <section id="services">
         <h2>Our Services</h2>
         <div class="service-cards">
             <div class="card">
-                <img src="Mobile Setting.png" alt="">
+                
+                <div class="service-icon">
+                    <i class="fa fa-cogs">⚙️
+                    </i>
+                </div>
                     
                 
                 <h3>Easy to Customize</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="card">
-                <img src="Plastic Resin Blue Modular Block.png" alt="">
+                <div class="service-icon">
+                    <i>📦
+                    </i>
+                </div>
                 <h3>100+ Components</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
@@ -71,82 +114,278 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <div class="portfolio11">
-    <section id="portfolio">
-        <h2>Our Portfolio</h2>
-        <table>
-            <div class="box1">
-                <tr>
-                    <td>All</td>
-                    <td>Branding</td>
-                    <td>Marketing</td>
-                    <td>Planning</td>
-                    <td>Research</td>
-                </tr>
+       <!-- Portfolio Section -->
+       <section class="portfolio-section">
+        <h2 class="section-title">Portfolio </h2>
+        <div class="container">
+            
+            <div class="filter-buttons">
+                <button class="filter-btn " data-filter="all">All</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+                <button class="filter-btn" data-filter="planning">Planning</button>
+                <button class="filter-btn" data-filter="research">Research</button>
             </div>
-        </table>
-        <br>
-        <div class="portfolio-gallery">
-            <img src="DSC03450-820x500.jpg" alt="Project 1">
-            <img src="sportive-woman-flying-jump.jpg" alt="Project 2">
-            <img src="hamburger-platter-meat-beef-8e49fde8fef6543560b6dc3004b2034f.jpg" alt="Project 3">
-            <img src="abstract-night-traffic-blur-background-with-bokeh-light_293060-4098.jpg" alt="Project 1">
-            <img src="designer-done-employees-employer-thumbnail.jpg" alt="Project 2">
-            <img src="droplets-on-grass-after-raining-t1jsbbw5gryjiwqb.jpg" alt="Project 3">
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="branding">
+                    <img src="img/flicker/img1.jpg" alt="Portfolio 1">
+                </div>
+                <div class="portfolio-item" data-category="marketing">
+                    <img src="img/flicker/img2.jpg" alt="Portfolio 2">
+                </div>
+                <div class="portfolio-item" data-category="research">
+                    <img src="img/flicker/img3.jpg" alt="Portfolio 3">
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <img src="img/flicker/img4.jpg" alt="Portfolio 4">
+                </div>
+                <div class="portfolio-item" data-category="planning">
+                    <img src="img/flicker/img5.jpg" alt="Portfolio 5">
+                </div>
+                <div class="portfolio-item" data-category="research">
+                    <img src="img/flicker/img6.jpg" alt="Portfolio 6">
+                </div>
+            </div>
         </div>
     </section>
-</div>
 
     <!-- Features Section -->
-    <section id="features">
-        <div>
-            <h2>Features</h2>
-            <p>Highlight the features of your services or products here.</p>
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="icon">⚡</i>
+                    <h4>Bootstrap 4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="icon">💎</i>
+                    <h4>Clean Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="icon">🛠</i>
+                    <h4>Easy to Customize</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="icon">📦</i>
+                    <h4>100+ Components</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="icon">✔</i>
+                    <h4>Pixel Perfect</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="icon">☁</i>
+                    <h4>Cloud Backup</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="icon">⬇</i>
+                    <h3>561</h3>
+                    <p>Downloads</p>
+                </div>
+                <div class="stat-item">
+                    <i class="icon">👥</i>
+                    <h3>950</h3>
+                    <p>Developers</p>
+                </div>
+                <div class="stat-item">
+                    <i class="icon">🖥️</i>
+                    <h3>978</h3>
+                    <p>Lines of code written</p>
+                </div>
+                <div class="stat-item">
+                    <i class="icon">☕</i>
+                    <h3>1700</h3>
+                    <p>Cups of coffee consumed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Team Section -->
     <section id="team">
         <h2>Our Team</h2>
         <div class="team-members">
             <div class="member">
                 <img src="pexels-joelson-melo-9135-50855.jpg" alt="Member 1">
-                <h3>Member 1</h3>
-                <p>Position</p>
+                <h3>Jack</h3>
+                
             </div>
             <div class="member">
                 <img src="pexels-linkedin-2182970.jpg" alt="Member 2">
-                <h3>Member 2</h3>
-                <p>Position</p>
+                <h3>Oggy</h3>
+                
             </div>
             <div class="member">
                 <img src="pexels-thisisengineering-3861954.jpg" alt="Member 3">
-                <h3>Member 3</h3>
-                <p>Position</p>
+                <h3>Olivia</h3>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Table Section -->
+    <section class="pricing-table">
+        <h2>Pricing Table</h2>
+        <div class="pricing-container">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <div class="price">$10 <span>/ per month</span></div>
+                <ul>
+                    <li>✔ 2GB Disk Space</li>
+                    <li>✔ 3 Sub Domains</li>
+                    <li>✔ 12 Database</li>
+                    <li>✔ Unlimited Users</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card featured">
+                <h3>Premium</h3>
+                <div class="price">$69 <span>/ per month</span></div>
+                <ul>
+                    <li>✔ 10GB Disk Space</li>
+                    <li>✔ 5 Sub Domains</li>
+                    <li>✔ 12 Database</li>
+                    <li>✔ Unlimited Users</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+
+            <!-- Ultimate Plan -->
+            <div class="pricing-card">
+                <h3>Ultimate</h3>
+                <div class="price">$79 <span>/ per month</span></div>
+                <ul>
+                    <li>✔ 50GB Disk Space</li>
+                    <li>✔ 20 Sub Domains</li>
+                    <li>✔ 36 Database</li>
+                    <li>✔ Unlimited Users</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="testimonial-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsa, non ut molestiae rerum praesentium.</p>
+            <div class="testimonial-author">
+                <img src="img/testimoni/img1.jpg" alt="Elon Musk">
+                <h4>Elon Musk</h4>
+                <span>Tesla</span>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="email" name="email" placeholder="Your Email">
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <div class="contact-info">
-            <p>Address: 123 Street, City, Country</p>
-            <p>Email: example@example.com</p>
-            <p>Phone: +123 456 7890</p>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="container">
+            
+            <div class="contact-content">
+                <div class="get-in-touch">
+                    <h3>Get in touch</h3>
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Level 13, 2 Elizabeth St, Melbourne</p>
+                    <p>1800 452 308</p>
+                    <p>+61 (0) 8234 3555</p>
+                    <p><a href="https://www.youtube.com">turjjohalder@gmail.com</a></p>
+                    <p><a href="https://www.youtube.com">www.youtube.com</a></p>
+                    <div class="social-media">
+                        <a href="#"><img src="img/social-icon/facebook.png" alt=""></a>
+                        <a href="#"><img src="img/social-icon/twitter.png" alt=""></a>
+                        <a href="#"><img src="img/social-icon/instagram.png" alt=""></a>
+                        <a href="#"><img src="img/social-icon/linked.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+       <!-- Footer Section -->
+       <footer>
+        <div class="footer-container">
+            <div class="footer-section about-us">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis veritatis eius porro modi hic.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="img/social-icon/facebook.png" alt=""></a>
+                    <a href="#"><img src="img/social-icon/twitter.png" alt=""></a>
+                    <a href="#"><img src="img/social-icon/instagram.png" alt=""></a>
+                    <a href="#"><img src="img/social-icon/linked.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section gallery">
+                <h3>Gallery</h3>
+                <div class="gallery-images">
+                    <img src="img/flicker/img1.jpg" alt="Gallery Image">
+                    <img src="img/flicker/img2.jpg" alt="Gallery Image">
+                    <img src="img/flicker/img3.jpg" alt="Gallery Image">
+                    <img src="img/flicker/img4.jpg" alt="Gallery Image">
+                    <img src="img/flicker/img5.jpg" alt="Gallery Image">
+                    <img src="img/flicker/img6.jpg" alt="Gallery Image">
+                </div>
+            </div>
+            <div class="footer-section subscribe">
+                <h3>Subscribe Us</h3>
+                <form action="#">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All copyrights reserved &copy; 2018 - Designed & Developed by <a href="#">Mridul</a></p>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Services</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
