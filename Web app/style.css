@@ -86,6 +86,8 @@ nav ul li a:hover {
     
     background: transparent;
     border: 10px;
+    border-style: dashed solid double;
+    border-width: 2px;
     border-color: #ea586f;
 }
 
